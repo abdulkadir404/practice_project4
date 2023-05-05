@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #fafafa;
+    position: relative;
+    width: 1510px;
+    min-height: 800px;
+}
+
+nav {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    background-color: #fafafa;
+    width: 1510px;
+}
+
+.list {
+    color: #6e6e6e;
+    font-weight: 500;
+    display: flex;
+    font-size: large;
+    justify-content: space-between;
+    width: 440px;
+    margin: 20px 5px 16px 60px;
+}
+
+.list ul {
+    display: flex;
+}
+
+.list ul li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+.list ul li a {
+    cursor: pointer;
+}
+
+.brand {
+    margin: 16px 5px 16px 10px;
+    width: 100px;
+    height: 35px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sign-in {
+    margin: 10px 10px 16px 659px;
+    color: #868686;
+    font-weight: 500;
+}
+
+.sign-in a:hover {
+    color: #3f3f3f;
+}
+
+.sign-in a {
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.sign-in button {
+    color: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid #868686;
+    font-size: large;
+}
+
+.sign-in button:hover {
+    border-color: #3f3f3f;
+    color: #3f3f3f;
+}
+
+.img-box {
+    background-image: url(./images/image-hero-desktop.png);
+    width: 650px;
+    height: 600px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.data {
+    background-image: url(./images/client-databiz.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.audio {
+    background-image: url(./images/client-audiophile.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.meet {
+    background-image: url(./images/client-meet.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.maker {
+    background-image: url(./images/client-maker.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1410px;
+    justify-content: center;
+    margin: 0 50px 0 80px;
+}
+
+.container .img {
+    width: 50%;
+
+}
+
+.container .content {
+    justify-content: space-between;
+    width: 650px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+
+.partner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.partner div {
+    width: 100px;
+    height: 30px;
+}
+
+.content button {
+    border: none;
+    background-color: #151515;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: medium;
+    margin-top: -60px;
+    font-weight: 600;
+}
+
+.content button:hover {
+    background: #fafafa;
+    border: 1px solid #191919;
+    color: #191919;
+    cursor: pointer;
+}
+
+.content p {
+    color: #6e6e6e;
+    margin-top: -120px;
+    font-weight: initial;
+    font-size: x-large;
+}
+
+.content h1 {
+    font-size: 92px;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #3f3f3f;
+}
+
+/*hidden-menu*/
+.fdrop {
+    display: block;
+}
+
+.cdrop {
+    display: block;
+}
+
+.fcont {
+    position: absolute;
+    width: 170px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 199px grey;
+    background-color: #ffffff;
+    top: 55px;
+    display: none;
+
+}
+
+.fdrop:hover .fcont {
+    display: block;
+}
+
+.ccont {
+    position: absolute;
+    width: 170px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 199px grey;
+    background-color: #ffffff;
+    top: 55px;
+    display: none;
+}
+
+.cdrop:hover .ccont {
+    display: block;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    font-weight: lighter;
+}
+
+.newlist {
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+}
+
+/*side-menu*/
+.sidemenu {
+    display: none;
+    position: fixed;
+    width: 50%;
+    margin-left: 46%;
+}
+
+.sidemenu.active {
+    display: block;
+}
+
+.sidemenu1 {
+    margin-top: -5%;
+    gap: 5%;
+    padding: 13%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #868686;
+    height: 100vh;
+}
+
+.side-signin {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #868686;
+    font-weight: 500;
+}
+
+.side-signin button {
+    color: #868686;
+    background-color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid #868686;
+    font-size: large;
+}
+
+.sidemenu .hamburger {
+    margin-left: 130px;
+}
+
+.sfcont {
+    display: none;
+}
+
+.sfcont.active {
+    display: block;
+}
+
+.sccont {
+    display: none;
+}
+
+.sccont.active {
+    display: block;
+}
+
+/*media queries*/
+
+@media (max-width: 576px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    nav {
+        width: 100%;
+        gap: 60%;
+        padding: 10px 22px;
+    }
+
+    .brand {
+        margin-left: -3px;
+        width: 80px;
+        height: 30px;
+        margin-top: 18px;
+        background-size: contain;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        height: 90vh;
+        margin: 0;
+    }
+
+    .img-box {
+        width: 100%;
+        height: 45vh;
+        margin: 0 auto;
+
+    }
+
+    .container .content {
+        align-items: center;
+        width: 100%;
+        height: 45vh;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 50px;
+        margin: 15px 0px 14px;
+    }
+
+    .content p {
+        margin: 1px 0px 15px;
+        font-size: large;
+    }
+
+    .content button {
+        margin: 10px 0px;
+    }
+
+    .partner {
+        margin: 25px 0px 8px;
+        padding: 0 5px;
+        gap: 4px;
+    }
+
+    .partner div {
+        width: 90px;
+    }
+
+    .newlist {
+        position: fixed;
+        top: 60px;
+        left: 150%;
+        display: none;
+        flex-direction: column;
+        background-color: #fafafa;
+        height: 1160px;
+        width: 50%;
+        transition: 0.3s ease;
+    }
+
+    .newlist.active {
+        left: 50%;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .sign-in {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 8px 10px;
+        gap: 5px;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 17px 30px 17px 20px;
+    }
+
+    /*slide menu*/
+    .fcont {
+        position: absolute;
+        width: 170px;
+        height: 180px;
+        /*border-radius: 10px;*/
+        box-shadow: 1px 1px 199px grey;
+        background-color: #ffffff;
+        top: 55px;
+        display: none;
+    }
+
+}
